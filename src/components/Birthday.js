@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/img.css";
+import "../styles/birthday.css";
 
 function Birthday({ img, name, age }) {
 	return (
@@ -7,8 +7,10 @@ function Birthday({ img, name, age }) {
 			<div className="img-container">
 				<img src={img} alt="" />
 			</div>
-			<h1>{name}</h1>
-			<h4>{age} years</h4>
+			<div className="desc">
+				<h3>{name}</h3>
+				<h4>{age} years</h4>
+			</div>
 		</section>
 	);
 }
