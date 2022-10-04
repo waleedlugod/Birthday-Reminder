@@ -1,12 +1,13 @@
 import "./App.css";
+import Birthday from "./components/Birthday";
+import { birthdays } from "./data/birthdays";
 
 function App() {
 	return (
 		<>
-			<ul>
-				<li>hi</li>
-				<li>hi</li>
-			</ul>
+			{birthdays.map((birthdays) => {
+				return <Birthday key={birthdays.id} {...birthdays} />;
+			})}
 		</>
 	);
 }
