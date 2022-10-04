@@ -1,5 +1,14 @@
 import "./App.css";
 
-function App() {}
+function App() {
+	return (
+		<>
+			<ul>
+				<li>hi</li>
+				<li>hi</li>
+			</ul>
+		</>
+	);
+}
 
 export default App;
